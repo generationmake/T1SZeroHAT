@@ -3556,16 +3556,16 @@
 		(uuid "7fed623e-cc9c-44f4-999b-1b93b56db8a1")
 	)
 	(junction
+		(at 96.52 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8302a95a-607a-4c3e-9b90-d87bf9366fba")
+	)
+	(junction
 		(at 190.5 54.61)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "83ede720-cde2-4a2f-bc39-04e8b1013f50")
-	)
-	(junction
-		(at 96.52 41.91)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8ed6677a-20c4-487c-aeab-75dccf9bc327")
 	)
 	(junction
 		(at 96.52 39.37)
@@ -4193,6 +4193,16 @@
 	)
 	(wire
 		(pts
+			(xy 93.98 46.99) (xy 99.06 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2fae6f73-af6d-4988-bd15-20ddd08590d0")
+	)
+	(wire
+		(pts
 			(xy 115.57 27.94) (xy 115.57 26.67)
 		)
 		(stroke
@@ -4400,16 +4410,6 @@
 			(type default)
 		)
 		(uuid "4861883e-9d9a-4069-9643-f3e02bbc2383")
-	)
-	(wire
-		(pts
-			(xy 93.98 46.99) (xy 96.52 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "48deb894-25aa-4e24-b827-192b24f4514c")
 	)
 	(wire
 		(pts
@@ -4723,16 +4723,6 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 46.99) (xy 96.52 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6ad1f6f1-b7c7-44d2-a409-289df458d919")
-	)
-	(wire
-		(pts
 			(xy 127 33.02) (xy 127 34.29)
 		)
 		(stroke
@@ -4780,6 +4770,16 @@
 			(type default)
 		)
 		(uuid "724acfed-2508-43f2-a066-5a6188da0be7")
+	)
+	(wire
+		(pts
+			(xy 96.52 44.45) (xy 96.52 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74772085-0fb0-4750-9cc8-1c621c4f0cb6")
 	)
 	(wire
 		(pts
@@ -4900,6 +4900,16 @@
 			(type default)
 		)
 		(uuid "85ead99f-4869-4caa-b5e6-70de243130b8")
+	)
+	(wire
+		(pts
+			(xy 93.98 44.45) (xy 96.52 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8634fa84-6689-4b06-94f4-948b79b279f9")
 	)
 	(wire
 		(pts
@@ -5453,16 +5463,6 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 44.45) (xy 99.06 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e52e97a2-41ea-4ae7-a40a-8be48bbc0450")
-	)
-	(wire
-		(pts
 			(xy 204.47 68.58) (xy 204.47 71.12)
 		)
 		(stroke
@@ -5583,7 +5583,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 44.45) (xy 99.06 35.56)
+			(xy 99.06 35.56) (xy 99.06 46.99)
 		)
 		(stroke
 			(width 0)
@@ -6016,7 +6016,7 @@
 		)
 		(uuid "d6cf5311-3994-41cc-a937-266e82740ddb")
 	)
-	(label "VDDA"
+	(label "VDDAU"
 		(at 99.06 35.56 0)
 		(effects
 			(font
@@ -8736,6 +8736,69 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 33.02 31.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "11fdb39d-c37e-495b-9c93-8832a999deb5")
+		(property "Reference" "#PWR028"
+			(at 33.02 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 33.147 36.1442 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 33.02 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 33.02 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 33.02 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c3fa8fcf-af05-4e46-813b-475160080a11")
+		)
+		(instances
+			(project "T1SZeroHAT"
+				(path "/7e630080-3671-4ca2-a703-07968e580250"
+					(reference "#PWR028")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 193.04 82.55 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8869,6 +8932,83 @@
 			(project ""
 				(path "/7e630080-3671-4ca2-a703-07968e580250"
 					(reference "R15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 33.02 29.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1f5de911-552d-4fb8-b3ca-461203920ceb")
+		(property "Reference" "C14"
+			(at 35.3568 28.0416 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10 uF"
+			(at 35.3568 30.353 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 33.02 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 33.02 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 33.02 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 33.02 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d8fc975b-1306-4fe3-82db-cb4ba4103216")
+		)
+		(pin "2"
+			(uuid "b7124fd6-4329-4f0a-b7e9-29b94258a73a")
+		)
+		(instances
+			(project "T1SZeroHAT"
+				(path "/7e630080-3671-4ca2-a703-07968e580250"
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -9083,6 +9223,83 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 20.32 29.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "217cb7a5-3dc2-48a5-9a56-2a22bf9fb730")
+		(property "Reference" "C13"
+			(at 22.6568 28.0416 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10 uF"
+			(at 22.6568 30.353 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 20.32 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 20.32 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 20.32 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 20.32 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "61110204-8fbc-4175-8348-e9e34e1aa359")
+		)
+		(pin "2"
+			(uuid "505130a9-5c83-4472-b218-99104ef8fe38")
+		)
+		(instances
+			(project "T1SZeroHAT"
+				(path "/7e630080-3671-4ca2-a703-07968e580250"
+					(reference "C13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 41.91 43.18 0)
 		(unit 1)
@@ -9209,6 +9426,69 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 20.32 31.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2cf710e8-0de3-4293-b792-676cf1130c52")
+		(property "Reference" "#PWR025"
+			(at 20.32 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 20.447 36.1442 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 20.32 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 20.32 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 20.32 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fc49fe62-7f32-428f-a325-fa9baa3540ac")
+		)
+		(instances
+			(project "T1SZeroHAT"
+				(path "/7e630080-3671-4ca2-a703-07968e580250"
+					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 204.47 66.04 0)
 		(unit 1)
@@ -9280,6 +9560,69 @@
 			(project ""
 				(path "/7e630080-3671-4ca2-a703-07968e580250"
 					(reference "C12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 33.02 26.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "37f14d01-2260-48f6-a4ab-581c29f538f4")
+		(property "Reference" "#PWR027"
+			(at 33.02 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 33.401 22.2758 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 33.02 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 33.02 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 33.02 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2a54034a-0c82-4902-8210-657339188cb3")
+		)
+		(instances
+			(project "T1SZeroHAT"
+				(path "/7e630080-3671-4ca2-a703-07968e580250"
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -10463,6 +10806,69 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 20.32 26.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9abd7bfd-b076-44ff-b31d-472eb0e104d2")
+		(property "Reference" "#PWR026"
+			(at 20.32 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 20.701 22.2758 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 20.32 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 20.32 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 20.32 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c23f1e89-837f-4e6a-99b3-950080b07b36")
+		)
+		(instances
+			(project "T1SZeroHAT"
+				(path "/7e630080-3671-4ca2-a703-07968e580250"
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 138.43 30.48 0)
 		(unit 1)
@@ -11176,68 +11582,6 @@
 			(project ""
 				(path "/7e630080-3671-4ca2-a703-07968e580250"
 					(reference "#PWR012")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "generationmake:Label")
-		(at 175.26 160.02 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "c90de6ec-8b1e-4482-a692-291e6d522cdb")
-		(property "Reference" "L4"
-			(at 181.0512 157.3276 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Label"
-			(at 181.0512 160.02 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "generationmake:opencyphal_small"
-			(at 181.0512 162.7124 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-			)
-		)
-		(property "Datasheet" ""
-			(at 175.26 160.02 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 175.26 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project ""
-				(path "/7e630080-3671-4ca2-a703-07968e580250"
-					(reference "L4")
 					(unit 1)
 				)
 			)
