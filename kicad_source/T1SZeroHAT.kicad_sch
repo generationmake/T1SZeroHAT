@@ -3782,10 +3782,6 @@
 		(uuid "ab304d11-8190-482f-a296-8c2936b22a64")
 	)
 	(no_connect
-		(at 68.58 87.63)
-		(uuid "b466e4b2-afcd-44b9-885c-3ad478988252")
-	)
-	(no_connect
 		(at 87.63 182.88)
 		(uuid "d9b535f7-81c9-45b5-a7b7-7e0852a692bb")
 	)
@@ -3964,6 +3960,16 @@
 			(type default)
 		)
 		(uuid "11544519-990f-4eac-a08f-b08c95acba08")
+	)
+	(wire
+		(pts
+			(xy 66.04 87.63) (xy 66.04 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1181eb95-568f-4e48-a4ec-25e1ff29422e")
 	)
 	(wire
 		(pts
@@ -5584,6 +5590,16 @@
 			(type default)
 		)
 		(uuid "fd431699-64e1-4aef-b7d5-e5d29152b802")
+	)
+	(wire
+		(pts
+			(xy 68.58 87.63) (xy 66.04 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "febf0944-e479-4080-9be6-2ed123c21aac")
 	)
 	(text "find the full project documentation at https://github.com/generationmake/T1SZeroHAT"
 		(exclude_from_sim no)
@@ -9593,6 +9609,69 @@
 			(project ""
 				(path "/7e630080-3671-4ca2-a703-07968e580250"
 					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 66.04 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5d1079d3-fad5-466b-aecf-cd4777aeae85")
+		(property "Reference" "#PWR015"
+			(at 66.04 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 66.167 94.5642 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 66.04 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 66.04 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 66.04 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "035c92a6-b069-473a-8828-f4243421cfee")
+		)
+		(instances
+			(project "T1SZeroHAT"
+				(path "/7e630080-3671-4ca2-a703-07968e580250"
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
